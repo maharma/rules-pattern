@@ -6,6 +6,6 @@ namespace RulesPattern
 {
     public interface IRecommendationRule
     {
-        IQueryable<Product> Evaluate(Choices customerChoices, IEnumerable<Product> products);
+        IQueryable<Product> Evaluate(Choices choices, IEnumerable<Product> products);
     }
 }
