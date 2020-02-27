@@ -16,7 +16,7 @@ namespace RulesPattern.Tests.Rules
         }
 
         [Fact]
-        public void FilterProducts_Returns_ProductsForExtrasTierEssential()
+        public void FilterProducts_Returns_ProductsForHospitalPublic()
         {
             // Arrange
             var choices = new Choices { Hospital = Hospital.Public };
@@ -30,7 +30,7 @@ namespace RulesPattern.Tests.Rules
         }
 
         [Fact]
-        public void FilterProducts_Returns_ProductsForExtrasTierIntermediate()
+        public void FilterProducts_Returns_ProductsForHospitalPublicPrivate()
         {
             // Arrange
             var choices = new Choices { Hospital = Hospital.PublicPrivate };
