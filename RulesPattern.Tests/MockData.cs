@@ -86,7 +86,7 @@ namespace RulesPattern.Tests
                 Dental = true,
                 ExtrasTier = ExtrasTier.Intermediate,
                 Hospital = Hospital.PublicPrivate,
-                Nsd = false,
+                Nsd = true,
             },
             new Product()
             {
@@ -96,7 +96,7 @@ namespace RulesPattern.Tests
                 Dental = true,
                 ExtrasTier = ExtrasTier.Top,
                 Hospital = Hospital.PublicPrivate,
-                Nsd = false,
+                Nsd = true,
             },
         };
     }
