@@ -33,5 +33,26 @@ namespace RulesPattern.Tests
             // Assert
             Assert.NotEmpty(recommendations.Where(p => p.Name == "Top Single"));
         }
+
+        [Fact]
+        public void Evaluator_Choices_FamilyAge45DentalExtrasTopHospitalPrivateNsd()
+        {
+            // Arrange
+            var choices = new Choices
+            {
+                CoverType = CoverType.Family,
+                Age = 45,
+                Dental = true,
+                ExtrasTier = ExtrasTier.Top,
+                Hospital = Hospital.PublicPrivate,
+                Nsd = true
+            };
+
+            // Act
+            var recommendations = _evaluator.Recommendations(choices);
+
+            // Assert
+            Assert.NotEmpty(recommendations.Where(p => p.Name == "Top Family"));
+        }
     }
 }
