@@ -6,11 +6,11 @@ using Xunit;
 
 namespace RulesPattern.Tests.Rules
 {
-    public class ExtrasTierTests
+    public class ExtrasTierRuleTests
     {
         private readonly IRecommendationRule _extrasTierRule;
 
-        public ExtrasTierTests()
+        public ExtrasTierRuleTests()
         {
             _extrasTierRule = new ExtrasTierRule();
         }
