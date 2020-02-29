@@ -1,6 +1,6 @@
-# rules-pattern
+# Simple implementation of Rules Pattern. 
 
-Rules Pattern
+Example is from health insurance when customer is trying to buy insurance with his requirements.
 
 dotnet restore
 
